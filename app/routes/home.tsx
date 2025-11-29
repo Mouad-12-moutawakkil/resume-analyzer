@@ -1,6 +1,5 @@
 import NavBar from "~/components/NavBar";
 import type { Route } from "./+types/home";
-import { resume } from "react-dom/server";
 import { resumes } from"./../../constants";
 import ResumeCard from "~/components/ResumeCard";
 import { usePuterStore } from "~/lib/puter"
