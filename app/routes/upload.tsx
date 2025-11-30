@@ -6,7 +6,6 @@ import { usePuterStore } from '~/lib/puter';
 import { useNavigate } from 'react-router';
 import { convertPdfToImage } from '~/lib/pdf2img';
 import { generateUUID } from '~/lib/utils';
-import { resume } from 'react-dom/server';
 import { prepareInstructions } from 'constants/index';
 
 const upload = () => {
@@ -62,6 +61,7 @@ const upload = () => {
         await kv.set(`resume:${uuid}`, JSON.stringify(data));
         setStatusText('Analysis Complete, redirecting ... ');
         console.log(data);
+        navigate(`/resume/${uuid}`);
     }
 
     const handleSubmmit = (e: FormEvent<HTMLFormElement>) => {
