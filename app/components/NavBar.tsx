@@ -9,7 +9,7 @@ const NavBar = () => {
         RESUMIND
       </p>
       </Link>
-      <Link to ='/uploads' className='primary-button w-fit'>
+      <Link to ='/upload' className='primary-button w-fit'>
       Upload Resume
       </Link>
     </nav>
